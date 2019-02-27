@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
         products.add(product4);
         products.add(product5);
 
-        ProductAdapter productAdapter = new ProductAdapter(products);
+        ProductAdapter productAdapter = new ProductAdapter(products,this);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         recyclerView.setAdapter(productAdapter);
     }
